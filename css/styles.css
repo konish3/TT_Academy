@@ -1,0 +1,360 @@
+p {
+  color: #1f2533;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+._container {
+  margin: 0 auto;
+  padding: 0 72px;
+  box-sizing: content-box;
+  max-width: 1200px;
+}
+.img-from-title {
+  position: absolute;
+  top: 4px;
+  left: -62px;
+}
+.title {
+  position: relative;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+/* About Container */
+
+.about {
+  margin: 133px 0 120px 0;
+}
+.about::after {
+  content: "";
+  background-image: url("https://s3-alpha-sig.figma.com/img/9114/f02d/3409ea570e0b2fd0b9de33ea5788b096?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RVhJZmF5UVfy5N25VItgyWzyuaqyjNo-YQOZFkYFOwMCvw-w7O1RK4BDzX84bmf3Mg3nIvNaxHUrzUlHiEzC7Y1-4cTbTkicQhkxjZ6PWwsBbhJhaAF3RP4D8S7FgDyM1nT4lqC-75GB6utGu7Oqbn0iEVdXoYNK1U9ROMNiFWFQtXFXlxosSaPaISqSY9hEcrzXxU7ovtaUnK0BnnQhS-6cQHrc0AXwUGMbra8d3L6FCW~MnNFDymVR4m-PFxIfEUgQEaEqa2E1Owu0RSZpE9tlm7RZuNvBXpODvaujaUF-qt4AO3QmHTJI08MxFIhWxONhJxflkTceH242N5s3KQ__");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 840px;
+  object-fit: fill;
+  opacity: 0.05;
+}
+.about__title {
+  margin-bottom: 70px;
+}
+.about__info {
+  display: flex;
+  align-items: center;
+}
+.about__list_items {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+
+  margin-right: 4vw;
+}
+.about__list_item {
+  display: flex;
+  align-items: center;
+  color: #1f2533;
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  svg {
+    margin-left: 10px;
+  }
+}
+.about__img {
+  img {
+    max-width: 100%;
+  }
+}
+
+/* License Container */
+
+.license {
+  display: flex;
+  margin-bottom: 120px;
+}
+.license__img {
+  margin-right: 4vw;
+  img {
+    width: 100%;
+  }
+}
+.license__download {
+  display: flex;
+  margin-top: 12px;
+  img {
+    width: 50px;
+  }
+}
+.license__download_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.license__download_p1 {
+  margin-bottom: 6px;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.license__download_p2 {
+  font-size: 16px;
+  color: #999999;
+}
+.license__info {
+  max-width: 34.7vw;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+
+  ul,
+  li {
+    list-style: initial;
+    margin: 0 0 0.5vw 15px;
+
+    color: #1f2533;
+  }
+}
+.license__info_p1 {
+  margin-bottom: 2vw;
+}
+.license__info_h1 {
+  margin-bottom: 1vw;
+}
+.license__info_p2 {
+  margin-bottom: 2vw;
+}
+.license__info_h2 {
+  margin-bottom: 1vw;
+}
+
+/* Statistics Container  */
+
+.statistics {
+  margin-bottom: 120px;
+}
+.statistics__title {
+  margin-bottom: 57px;
+}
+.slaider__cards {
+  margin-bottom: 58px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 37.5%);
+  grid-template-rows: 2fr;
+  grid-row-gap: 30px;
+}
+.card {
+  position: relative;
+  top: 0;
+  left: 0%;
+
+  width: 93.33%;
+  height: 96.33%;
+  padding: 30px;
+
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 78px 0px #1b1a181a;
+}
+.card__number {
+  font-weight: 600;
+  font-size: calc((100vw - 300px) / (1920 - 300) * (60 - 24) + 24px);
+  color: #fd3c76;
+
+  margin-bottom: 10px;
+}
+.card__info {
+  max-width: 260px;
+  font-weight: 600;
+  font-size: calc((100vw - 300px) / (1920 - 300) * (18 - 12) + 12px);
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #1f2533;
+}
+.slaider__line {
+  position: relative;
+
+  height: 10px;
+
+  background-color: #f4f4f6;
+  border-radius: 28px;
+}
+.slaider__line > div {
+  position: absolute;
+  height: 10px;
+  width: 35%;
+  background-color: #fd3c76;
+  border-radius: 9px;
+
+  cursor: pointer;
+}
+
+/* Director Container  */
+
+.director {
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+}
+.director__foto {
+  width: 370px;
+  height: 500px;
+  margin-right: 30px;
+  img {
+    width: 100%;
+  }
+}
+.director__info {
+  max-width: 41.6vw;
+  ul,
+  li {
+    list-style: initial;
+    margin: 0 0 5px 15px;
+
+    color: #fd3c76;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+.director__title {
+  display: flex;
+  margin-bottom: 2vw;
+  font-size: calc((100vw - 300px) / (1920 - 300) * (60 - 20) + 20px);
+  h2 {
+    margin-right: 30px;
+  }
+}
+.director__name {
+  font-size: calc((100vw - 300px) / (1920 - 300) * (22 - 18) + 18px);
+  font-weight: 600;
+  line-height: 26px;
+
+  margin-bottom: 30px;
+}
+.director__about {
+  margin-bottom: 28px !important;
+}
+.director__quote {
+  padding: 20px;
+
+  line-height: 26px;
+  border-radius: 15px;
+  background-color: #f3f6ff;
+}
+
+/* Adaptive Container  */
+
+@media (width < 960px) {
+  ._container {
+    padding: 0 45px;
+  }
+  .img-from-title {
+    position: absolute;
+    top: 4px;
+    left: -35px;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 70px;
+  }
+  .about {
+    margin-bottom: 100px;
+  }
+  .about__title {
+    margin-bottom: 50px;
+  }
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .about__list_items {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  .about__list_item {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 22px;
+    }
+  }
+
+  /* License Container  */
+
+  .license {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .license__img {
+    order: 2;
+    margin-right: 0;
+  }
+  .license__download {
+    margin-top: 0;
+  }
+  .license__info {
+    max-width: 100%;
+
+    ul {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Director Container  */
+
+  .director {
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .director__foto {
+    width: 75%;
+    margin-right: 0;
+    order: 2;
+  }
+  .director__info {
+    order: 1;
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .director__title {
+    align-items: center;
+
+    line-height: 7vw;
+    font-size: calc((100vw - 300px) / (960 - 300) * (36 - 28) + 28px);
+  }
+}
+
+@media (width < 768px) {
+  .slaider__cards {
+    grid-template-columns: repeat(4, 54%);
+    grid-row-gap: 10px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .card__number {
+    font-size: calc((100vw - 300px) / (1200 - 300) * (60 - 20) + 20px);
+  }
+  .card__info {
+    font-size: calc((100vw - 300px) / (1200 - 300) * (18 - 6) + 6px);
+    line-height: 120%;
+  }
+  .slaider__line > div {
+    width: 13%;
+  }
+}
